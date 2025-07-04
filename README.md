@@ -1,10 +1,17 @@
 # 📘 Sistem Akademik Mini
 
+### Nama : Leni
+### Nim : 312410442
+### Kelas : TI.24.A5
+### Matkul : Basis data
+
+
+
 ## 🗄️ Struktur Tabel
 
-**5 tabel utama**:
+### **5 tabel utama**:
 
-1️⃣ **`🧑‍🎓 mahasiswa`**  
+### 1️⃣ **`🧑‍🎓 mahasiswa`**  
 - `nim` (PK)  
 - `nama`  
 - `jk`  
@@ -15,23 +22,23 @@
 - `no_hp`  
 - `kd_ds` (FK ke `dosen.kd_ds`)
 
-2️⃣ **`👨‍🏫 dosen`**  
+### 2️⃣ **`👨‍🏫 dosen`**  
 - `kd_ds` (PK)  
 - `nama`
 
-3️⃣ **`📚 matakuliah`**  
+### 3️⃣ **`📚 matakuliah`**  
 - `kd_mk` (PK)  
 - `nama`  
 - `sks`
 
-4️⃣ **`🗓️ jadwalmengajar`**  
+### 4️⃣ **`🗓️ jadwalmengajar`**  
 - `kd_mk` (PK, FK ke `matakuliah.kd_mk`)  
 - `kd_ds` (PK, FK ke `dosen.kd_ds`)  
 - `hari`  
 - `jam`  
 - `ruang`
 
-5️⃣ **`📋 krsmahasiswa`**  
+### 5️⃣ **`📋 krsmahasiswa`**  
 - `nim` (PK, FK ke `mahasiswa.nim`)  
 - `kd_mk` (PK, FK ke `matakuliah.kd_mk`)  
 - `kd_ds` (FK ke `dosen.kd_ds`)  
@@ -42,7 +49,8 @@
 
 ## ⚙️ Penjelasan Fitur Aplikasi
 
-1. 📊 Dashboard Statistik Akademik
+
+### 📊 Dashboard Statistik Akademik
 Menampilkan jumlah total data dari setiap entitas utama menggunakan query SELECT COUNT(*):
 
 👨‍🎓 Mahasiswa (mahasiswa)
@@ -55,7 +63,8 @@ Menampilkan jumlah total data dari setiap entitas utama menggunakan query SELECT
 
 📋 KRS (krsmahasiswa)
 
-2. 🧭 Navigasi Menu Utama
+
+### 🧭 Navigasi Menu Utama
 Tersedia menu untuk akses cepat ke halaman:
 
 - lihat_mahasiswa_V2.php → Data Mahasiswa
@@ -68,15 +77,18 @@ Tersedia menu untuk akses cepat ke halaman:
 
 - laporan_krs.php → Laporan KRS
 
-3. 💬 Quotes Motivasi Acak
+
+### 💬 Quotes Motivasi Acak
 Menampilkan kutipan motivasi yang berubah setiap kali halaman direfresh. Diambil dari array PHP secara acak.
 
-4. ➕ Tombol Aksi Cepat
+
+### ➕ Tombol Aksi Cepat
 Tambah Data ➜ ke tambah_data.php
 
 Cetak Laporan ➜ ke cetak_laporan.php (dalam tab baru)
 
-5. 🕒 Jam dan Tanggal Real-Time
+
+### 🕒 Jam dan Tanggal Real-Time
 Menampilkan waktu saat ini di header atas dengan JavaScript (startTime())
 
 Footer juga menampilkan waktu server saat halaman terakhir diperbarui
