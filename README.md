@@ -1,4 +1,4 @@
-# 📘 Sistem Akademik Mini
+# 🎓 Sistem Akademik Mini - Universitas Pelita Bangsa
 
 ### Nama : Leni
 ### Nim : 312410442
@@ -84,9 +84,9 @@ Menampilkan kutipan motivasi yang berubah setiap kali halaman direfresh. Diambil
 
 
 ### 4. ➕ Tombol Aksi Cepat
-Tambah Data ➜ ke tambah_data.php
+- Tambah Data ➜ ke tambah_data.php
 
-Cetak Laporan ➜ ke cetak_laporan.php (dalam tab baru)
+- Cetak Laporan ➜ ke cetak_laporan.php (dalam tab baru)
 
 
 ### 5. 🕒 Jam dan Tanggal Real-Time
@@ -94,7 +94,7 @@ Menampilkan waktu saat ini di header atas dengan JavaScript (startTime())
 
 Footer juga menampilkan waktu server saat halaman terakhir diperbarui
 
-###🧪 Teknologi yang Digunakan
+🧪 Teknologi yang Digunakan
 PHP (Plain)
 
 - MySQLi untuk koneksi database
@@ -108,31 +108,28 @@ PHP (Plain)
 ---
 
 ## 🖥️ Screenshot Tampilan Aplikasi
+| Dashboard | Mahasiswa | Dosen |
+| Matakuliah | Jadwal | Krs |
 
-| Dashboard |
 <img src="/dashboard.png" width="500">
 
-| Mahasiswa |
 <img src="/mahasiswa.png" width="500"> 
 
-| Dosen |
 <img src="/dosen.png" width="500">
 
-| Matakuliah |
 <img src="/matakuliah.png" width="500">
 
-| Jadwal |
 <img src="/jadwal.png" width="500">
 
-| Krs |
 <img src="/krs.png" width="500">
 
 ---
 
+
 ## 💻 Cuplikan Fungsi SQL/UDF yang Digunakan
 
 ** OUTPUT **
-<img src="/COncat.png" width="500"> 
+<img src="/Concat.png" width="500"> 
 
 ** OUTPUT **
 <img src="/Upper.png" width="500">
@@ -145,6 +142,7 @@ PHP (Plain)
 
 ** OUTPUT **
 <img src="/Now.png" width="500">
+
 ```sql
 --  UPPER
 SELECT UPPER(nama) AS hasil_upper FROM mahasiswa;
