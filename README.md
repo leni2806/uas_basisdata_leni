@@ -50,7 +50,7 @@
 ## ⚙️ Penjelasan Fitur Aplikasi
 
 
-### 📊 Dashboard Statistik Akademik
+### 1. 📊 Dashboard Statistik Akademik
 Menampilkan jumlah total data dari setiap entitas utama menggunakan query SELECT COUNT(*):
 
 👨‍🎓 Mahasiswa (mahasiswa)
@@ -64,7 +64,7 @@ Menampilkan jumlah total data dari setiap entitas utama menggunakan query SELECT
 📋 KRS (krsmahasiswa)
 
 
-### 🧭 Navigasi Menu Utama
+### 2. 🧭 Navigasi Menu Utama
 Tersedia menu untuk akses cepat ke halaman:
 
 - lihat_mahasiswa_V2.php → Data Mahasiswa
@@ -78,22 +78,22 @@ Tersedia menu untuk akses cepat ke halaman:
 - laporan_krs.php → Laporan KRS
 
 
-### 💬 Quotes Motivasi Acak
+### 3. 💬 Quotes Motivasi Acak
 Menampilkan kutipan motivasi yang berubah setiap kali halaman direfresh. Diambil dari array PHP secara acak.
 
 
-### ➕ Tombol Aksi Cepat
+### 4. ➕ Tombol Aksi Cepat
 Tambah Data ➜ ke tambah_data.php
 
 Cetak Laporan ➜ ke cetak_laporan.php (dalam tab baru)
 
 
-### 🕒 Jam dan Tanggal Real-Time
+### 5. 🕒 Jam dan Tanggal Real-Time
 Menampilkan waktu saat ini di header atas dengan JavaScript (startTime())
 
 Footer juga menampilkan waktu server saat halaman terakhir diperbarui
 
-🧪 Teknologi yang Digunakan
+###🧪 Teknologi yang Digunakan
 PHP (Plain)
 
 - MySQLi untuk koneksi database
@@ -128,32 +128,32 @@ PHP (Plain)
 
 ## 🛠️ Cuplikan fungsi SQL/UDF yang digunakan
 
--- 1. CONCAT
+ 1. CONCAT
 SELECT CONCAT(nama, ' - Mahasiswa') AS hasil_concat FROM mahasiswa;
 
 ** OUTPUT **
 <img src="/Concat.png" width="500">
 
--- 2. UPPER
+ 2. UPPER
 SELECT UPPER(nama) AS hasil_upper FROM mahasiswa;
 
 ** OUTPUT **
 <img src="/Upper.png" width="500">
 
--- 3. IFNULL
+ 3. IFNULL
 SELECT IFNULL(nilai, 'Belum Dinilai') AS hasil_ifnull FROM krsmahasiswa;
 
 ** OUTPUT **
 <img src="/Ifinull.png" width="500">
 
--- 4. DATEDIFF
+ 4. DATEDIFF
 SELECT DATEDIFF(CURRENT_DATE, tgl_lahir) AS umur_dalam_hari FROM mahasiswa;
 
 ** OUTPUT **
 <img src="/Datediff.png" width="500">
 
 
--- 5. NOW
+ -- 5. NOW
 SELECT NOW() AS tanggal_laporan;
 
 ** OUTPUT **
