@@ -131,23 +131,8 @@ PHP (Plain)
 
 ## 💻 Cuplikan Fungsi SQL/UDF yang Digunakan
 
-```sql
---  UPPER
-SELECT UPPER(nama) AS hasil_upper FROM mahasiswa;
-
--- IFNULL
-SELECT IFNULL(nilai, 'Belum Dinilai') AS hasil_ifnull FROM krsmahasiswa;
-
--- DATEDIFF
-SELECT DATEDIFF(CURRENT_DATE, tgl_lahir) AS umur_dalam_hari FROM mahasiswa;
-
--- NOW
-SELECT NOW() AS tanggal_laporan;
-
----
-
 ** OUTPUT **
-<img src="/Concat.png" width="500">
+<img src="/COncat.png" width="500"> 
 
 ** OUTPUT **
 <img src="/Upper.png" width="500">
@@ -160,6 +145,18 @@ SELECT NOW() AS tanggal_laporan;
 
 ** OUTPUT **
 <img src="/Now.png" width="500">
+```sql
+--  UPPER
+SELECT UPPER(nama) AS hasil_upper FROM mahasiswa;
+
+-- IFNULL
+SELECT IFNULL(nilai, 'Belum Dinilai') AS hasil_ifnull FROM krsmahasiswa;
+
+-- DATEDIFF
+SELECT DATEDIFF(CURRENT_DATE, tgl_lahir) AS umur_dalam_hari FROM mahasiswa;
+
+-- NOW
+SELECT NOW() AS tanggal_laporan;
 
 ---
 
