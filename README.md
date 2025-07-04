@@ -129,24 +129,22 @@ PHP (Plain)
 
 ---
 
-## 🛠️ Cuplikan fungsi SQL/UDF yang digunakan
+## 💻 Cuplikan Fungsi SQL/UDF yang Digunakan
 
-'''sql
--- 1. CONCAT
-SELECT CONCAT(nama, ' - Mahasiswa') AS hasil_concat FROM mahasiswa;
-
--- 2. UPPER
+```sql
+--  UPPER
 SELECT UPPER(nama) AS hasil_upper FROM mahasiswa;
 
--- 3. IFNULL
+-- IFNULL
 SELECT IFNULL(nilai, 'Belum Dinilai') AS hasil_ifnull FROM krsmahasiswa;
 
--- 4. DATEDIFF
+-- DATEDIFF
 SELECT DATEDIFF(CURRENT_DATE, tgl_lahir) AS umur_dalam_hari FROM mahasiswa;
 
--- 5. NOW
+-- NOW
 SELECT NOW() AS tanggal_laporan;
 
+---
 
 ** OUTPUT **
 <img src="/Concat.png" width="500">
@@ -163,6 +161,7 @@ SELECT NOW() AS tanggal_laporan;
 ** OUTPUT **
 <img src="/Now.png" width="500">
 
+---
 
 ## 📥 Cara Menjalankan
 
