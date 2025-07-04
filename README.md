@@ -5,11 +5,13 @@
 ### Kelas : TI.24.A5
 ### Matkul : Basis data
 
-
+---
 
 ## 🗄️ Struktur Tabel
 
 ### **5 tabel utama**:
+
+---
 
 ### 1️⃣ **`🧑‍🎓 mahasiswa`**  
 - `nim` (PK)  
@@ -48,7 +50,6 @@
 ---
 
 ## ⚙️ Penjelasan Fitur Aplikasi
-
 
 ### 1. 📊 Dashboard Statistik Akademik
 Menampilkan jumlah total data dari setiap entitas utama menggunakan query SELECT COUNT(*):
@@ -104,6 +105,7 @@ PHP (Plain)
 
 - JavaScript DOM
 
+---
 
 ## 🖥️ Screenshot Tampilan Aplikasi
 
@@ -125,36 +127,38 @@ PHP (Plain)
 | Krs |
 <img src="/krs.png" width="500">
 
+---
 
 ## 🛠️ Cuplikan fungsi SQL/UDF yang digunakan
 
- 1. CONCAT
+'''sql
+-- 1. CONCAT
 SELECT CONCAT(nama, ' - Mahasiswa') AS hasil_concat FROM mahasiswa;
+
+-- 2. UPPER
+SELECT UPPER(nama) AS hasil_upper FROM mahasiswa;
+
+-- 3. IFNULL
+SELECT IFNULL(nilai, 'Belum Dinilai') AS hasil_ifnull FROM krsmahasiswa;
+
+-- 4. DATEDIFF
+SELECT DATEDIFF(CURRENT_DATE, tgl_lahir) AS umur_dalam_hari FROM mahasiswa;
+
+-- 5. NOW
+SELECT NOW() AS tanggal_laporan;
+
 
 ** OUTPUT **
 <img src="/Concat.png" width="500">
 
- 2. UPPER
-SELECT UPPER(nama) AS hasil_upper FROM mahasiswa;
-
 ** OUTPUT **
 <img src="/Upper.png" width="500">
-
- 3. IFNULL
-SELECT IFNULL(nilai, 'Belum Dinilai') AS hasil_ifnull FROM krsmahasiswa;
 
 ** OUTPUT **
 <img src="/Ifinull.png" width="500">
 
- 4. DATEDIFF
-SELECT DATEDIFF(CURRENT_DATE, tgl_lahir) AS umur_dalam_hari FROM mahasiswa;
-
 ** OUTPUT **
 <img src="/Datediff.png" width="500">
-
-
- -- 5. NOW
-SELECT NOW() AS tanggal_laporan;
 
 ** OUTPUT **
 <img src="/Now.png" width="500">
