@@ -109,7 +109,9 @@ PHP (Plain)
 
 ## 🖥️ Screenshot Tampilan Aplikasi
 | Dashboard | Mahasiswa | Dosen |
-| Matakuliah | Jadwal | Krs |
+|:---:|:---:|:---:|
+| **Matakuliah** | **Jadwal** | **Krs** |
+
 
 <img src="/dashboard.png" width="500">
 
@@ -126,22 +128,29 @@ PHP (Plain)
 ---
 
 
-## 💻 Cuplikan Fungsi SQL/UDF yang Digunakan
+## 💻 Output dari Cuplikan Fungsi SQL/UDF yang Digunakan
 
-** OUTPUT **
+ **OUTPUT**
 <img src="/Concat.png" width="500"> 
 
-** OUTPUT **
+ **OUTPUT**
 <img src="/Upper.png" width="500">
 
-** OUTPUT **
+ **OUTPUT**
 <img src="/Ifinull.png" width="500">
 
-** OUTPUT **
+ **OUTPUT**
 <img src="/Datediff.png" width="500">
 
-** OUTPUT **
+ **OUTPUT**
 <img src="/Now.png" width="500">
+
+
+---
+
+
+
+## 💻 Cuplikan Fungsi SQL/UDF yang Digunakan
 
 ```sql
 --  UPPER
