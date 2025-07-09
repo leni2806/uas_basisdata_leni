@@ -153,6 +153,9 @@ PHP (Plain)
 ## 💻 Cuplikan Fungsi SQL/UDF yang Digunakan
 
 ```sql
+--  CONCAT
+SELECT CONCAT(nama, ' - Mahasiswa') AS hasil_concat FROM mahasiswa;
+
 --  UPPER
 SELECT UPPER(nama) AS hasil_upper FROM mahasiswa;
 
@@ -164,6 +167,14 @@ SELECT DATEDIFF(CURRENT_DATE, tgl_lahir) AS umur_dalam_hari FROM mahasiswa;
 
 -- NOW
 SELECT NOW() AS tanggal_laporan;
+
+CREATE DEFINER=`root`@`localhost` FUNCTION `format_nama` (`nama` VARCHAR(100)) RETURNS VARCHAR(120) CHARSET utf8mb4 COLLATE utf8mb4_general_ci DETERMINISTIC BEGIN
+    RETURN CONCAT(UPPER(nama), ' - Mahasiswa UPB');
+END$$
+
+CREATE DEFINER=`root`@`localhost` FUNCTION `hitung_usia` (`tgl_lahir` DATE) RETURNS INT(11) DETERMINISTIC BEGIN
+    RETURN TIMESTAMPDIFF(YEAR, tgl_lahir, CURDATE());
+END$$
 
 ---
 
